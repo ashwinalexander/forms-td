@@ -13,6 +13,18 @@ export class AppComponent {
   defaultRadio = 'female';
   answer = '';
   genders = ['male', 'female'];
+  submitted = false;
+
+  user = {
+    username: '',
+    email: '',
+    secretQuestion: "",
+    secretAnswer: '',
+    gender: ''
+
+  }
+
+
   suggestUserName() {
     const suggestedName = 'Superuser';
     // this.signUpForm.setValue(
@@ -48,6 +60,12 @@ export class AppComponent {
 
   onSubmit() {
     console.log(this.signUpForm);
+    this.submitted = true;
+    this.user.username = this.signUpForm.value.userData.username;
+    this.user.email = this.signUpForm.value.userData.email;
+    this.user.secretQuestion = this.signUpForm.value.secret;
+    this.user.secretAnswer = this.signUpForm.value.questionAnswer;
+    this.user.gender = this.signUpForm.value.gender;
   }
 
 
