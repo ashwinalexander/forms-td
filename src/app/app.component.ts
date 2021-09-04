@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
 
   @ViewChild('f') signUpForm: NgForm;
-  defaultQuestion = 'teacher';
+  defaultQuestion = 'pet';
   defaultRadio = 'female';
   answer = '';
   genders = ['male', 'female'];
