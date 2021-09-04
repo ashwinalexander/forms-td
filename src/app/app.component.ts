@@ -26,7 +26,7 @@ export class AppComponent {
 
 
   suggestUserName() {
-    const suggestedName = 'Superuser';
+    const suggestedName = 'Superuserr';
     // this.signUpForm.setValue(
     //   {
     //     userData: {
